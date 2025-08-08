@@ -1,11 +1,12 @@
-# 医学图像分割模型
+# Medical Image Segmentation Model
 
-本项目基于 PyTorch 实现，用于对光学相干断层扫描（OCT）冠状动脉图像中斑块的语义分割任务。
+This project is implemented based on PyTorch and is designed for semantic segmentation of plaques in coronary artery Optical Coherence Tomography (OCT) images.
 
-## 快速开始
+## Quick Start
 
-运行以下命令开始训练：
+Run the following command to start training:
 
 ```bash
 python train.py
+
 
