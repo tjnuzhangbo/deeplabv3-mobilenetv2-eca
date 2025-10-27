@@ -52,9 +52,6 @@ We used the publicly available dataset **“OCT Dataset for Segmentation of Athe
 - Images and corresponding masks were resized to 512×512 pixels.  
 - Training and validation splits were prepared as described in our experiments (Training: 80%, Validation: 20%).  
 
-> Note: This processed subset is a **derivative of the original dataset**.  
-> Please cite the original dataset (Yu et al., DOI: 10.5281/zenodo.14478210) when using this data.
-
 
 #### 2. Private/Internal Dataset / 自有私有数据集
 We also conducted experiments using our own **in-house dataset** of coronary artery OCT images.  
@@ -81,6 +78,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
