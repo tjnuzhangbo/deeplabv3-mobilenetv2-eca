@@ -37,15 +37,12 @@ conda create -n yourname python=3.10
 
 conda activate yourname
 
-...
-
 ### 2️⃣ Dataset Preparation / 数据集准备
 data/
 
  ├── images/
  
  ├── masks/
-...
 
 ### 3️⃣ Training / 模型训练
 
@@ -53,15 +50,14 @@ Run the following command to start training:
 
 python train.py
 
-...
-
 ### 4️⃣ Evaluation / 模型评估
-...
+
 
 ### 5️⃣ Visualization / 结果可视化
-...
+
 
 ### 6️⃣ Example Command Summary / 示例命令总结
+
 
 
 
