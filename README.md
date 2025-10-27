@@ -3,7 +3,7 @@
 This project is implemented based on PyTorch and is designed for semantic segmentation of plaques in coronary artery Optical Coherence Tomography (OCT) images.
 
 # Overview 
-
+改进的Deeplab V3+整体结构图
 <img width="855" height="425" alt="image" src="https://github.com/user-attachments/assets/ed917ecf-3c8a-4d5b-a7b9-34972baa115d" />
 
 This repository contains the implementation of the paper:  
@@ -44,6 +44,7 @@ Run the following command to start training:
 
 ```bash
 python train.py
+
 
 
 
