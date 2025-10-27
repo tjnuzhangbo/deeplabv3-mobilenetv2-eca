@@ -4,6 +4,8 @@ This project is implemented based on PyTorch and is designed for semantic segmen
 
 # Overview 
 
+<img width="855" height="425" alt="image" src="https://github.com/user-attachments/assets/ed917ecf-3c8a-4d5b-a7b9-34972baa115d" />
+
 This repository contains the implementation of the paper:  
 本仓库为以下论文的实现：
 
@@ -42,6 +44,7 @@ Run the following command to start training:
 
 ```bash
 python train.py
+
 
 
 
