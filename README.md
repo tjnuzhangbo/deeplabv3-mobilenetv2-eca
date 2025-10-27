@@ -15,17 +15,17 @@ MobileNetV2 Architecture
 
 ---
 
-## 📘 Overview / 项目简介
+## 📘 Overview
 
 The model is built on an encoder-decoder structure and is improved in three key aspects: Firstly, MobileNetV2 is used as the backbone network in the encoder, optimizing feature extraction efficiency through its linear bottleneck structure and inverted residual units, significantly reducing the number of model parameters. Secondly, the multi-scale feature extraction capability of the Atrous Spatial Pyramid Pooling (ASPP) module is utilized to compensate for the feature loss caused by the lightweight design of MobileNetV2, enhancing the model's robustness to plaque morphology. Thirdly, an Efficient Channel Attention (ECA) module is embedded at the encoder-decoder skip connection, dynamically calibrating the weights of multi-scale feature channels to significantly improve the boundary recognition accuracy of plaques. 
 
 ---
 
-## 🚀 Quick Start / 快速开始
+## 🚀 Quick Start
 
 ## Quick Start
 
-### 1️⃣ Environment Setup / 环境配置
+### 1️⃣ Environment Setup
 
 Make sure you have Python 3.10+ and PyTorch installed. You can create a virtual environment and install dependencies as follows:
 
@@ -35,9 +35,9 @@ conda create -n yourname python=3.10
 
 conda activate yourname
 
-### 2️⃣ Dataset Description / 数据集说明
+### 2️⃣ Dataset Description
 
-#### 1. Public Dataset Used / 使用的公开数据集
+#### 1. Public Dataset Used
 We used the publicly available dataset **“OCT Dataset for Segmentation of Atherosclerotic Plaque Morphological Features”** (DOI: 10.5281/zenodo.14478210) for part of our experiments.  
 This dataset is licensed under **CC BY 4.0**, which allows reuse and modification with appropriate attribution.  
 Original dataset link: https://zenodo.org/records/14478210  
@@ -53,12 +53,12 @@ We used the publicly available dataset **“OCT Dataset for Segmentation of Athe
 - Training and validation splits were prepared as described in our experiments (Training: 80%, Validation: 20%).  
 
 
-#### 2. Private/Internal Dataset / 自有私有数据集
+#### 2. Private/Internal Dataset
 We also conducted experiments using our own **in-house dataset** of coronary artery OCT images.  
 Due to patient privacy and institutional restrictions, this dataset **cannot be publicly shared**.  
 Experiments with this dataset were performed **independently of the public dataset**.
 
-#### 3. Dataset Splits / 数据集划分
+#### 3. Dataset Splits
 Experiments were conducted **separately** for the two datasets, each split into training and validation sets as follows:
 
 - **Public dataset (processed derivative)**:  
@@ -69,15 +69,16 @@ Experiments were conducted **separately** for the two datasets, each split into 
   - Training: 80%  
   - Validation: 20%  
 
-### 3️⃣ Training / 模型训练
+### 3️⃣ Training
 
 Run the following command to start training:
 
 python train.py
 
-### 4️⃣ Evaluation / 模型评估
+### 4️⃣ Evaluation
 
 python predict.py
+
 
 
 
