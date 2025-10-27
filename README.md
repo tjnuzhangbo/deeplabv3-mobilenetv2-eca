@@ -35,12 +35,33 @@ conda create -n yourname python=3.10
 
 conda activate yourname
 
-### 2️⃣ Dataset Preparation / 数据集准备
-data/
+### 2️⃣ Dataset Description / 数据集说明
 
- ├── images/
- 
- ├── masks/
+#### 1. Public Dataset Used / 使用的公开数据集
+We used the publicly available dataset **“OCT Dataset for Segmentation of Atherosclerotic Plaque Morphological Features”** (DOI: 10.5281/zenodo.14478210) for part of our experiments.  
+This dataset is licensed under **CC BY 4.0**, which allows reuse and modification with appropriate attribution.  
+Original dataset link: https://zenodo.org/records/14478210  
+
+**Our processing:**  
+- We **re-annotated the dataset**, selecting **only one type of plaque** for our segmentation task;  
+- Images and corresponding masks were resized to 512×512 pixels;  
+- The dataset was split into training and validation sets as described in our experiments.  
+
+> Note: The processed subset is a **derivative of the original dataset**. Please cite the original dataset when using this portion of the data.
+
+#### 2. Private/Internal Dataset / 自有私有数据集
+In addition, we used our own **in‑house dataset** of coronary artery OCT images, collected under local institutional ethics approval.  
+Due to patient privacy and institutional restrictions, this dataset **cannot be publicly shared**.  
+However, we provide:
+- **Preprocessing scripts** (`data_preprocess.py`) for transforming raw OCT images into the format compatible with our model;  
+- A **small sample** of anonymized images and masks for demonstration (`examples/` folder);  
+- Instructions to apply the same preprocessing steps to similar OCT datasets.  
+
+#### 3. Dataset Splits / 数据集划分
+Both datasets (the public derivative and the internal dataset) were combined and then split into training/validation sets as follows:  
+- Training: 80%  
+- Validation: 20%  
+Users can reproduce the exact splits by running `scripts/split_dataset.py` with `seed=42`.
 
 ### 3️⃣ Training / 模型训练
 
@@ -51,6 +72,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
