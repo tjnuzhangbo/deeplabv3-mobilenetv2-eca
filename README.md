@@ -50,6 +50,7 @@ We used the publicly available dataset **“OCT Dataset for Segmentation of Athe
 **Our processing:**  
 - We **re-annotated the dataset**, selecting **only one type of plaque** for our segmentation task.
 - We **re-annotated the dataset**, selecting **only the lipid core plaque** for our segmentation task.
+- We **processed the original masks** to keep **only the lipid core plaques**, removing all other annotations, for our segmentation task.
 - Images and corresponding masks were resized to 512×512 pixels.  
 - Training and validation splits were prepared as described in our experiments (Training: 80%, Validation: 20%).  
 
@@ -82,6 +83,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
