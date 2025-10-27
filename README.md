@@ -44,7 +44,20 @@ Original dataset link: https://zenodo.org/records/14478210
 
 We used the publicly available dataset **“OCT Dataset for Segmentation of Atherosclerotic Plaque Morphological Features”** for part of our experiments.  
 - **DOI / Link:** [10.5281/zenodo.14478210](https://zenodo.org/records/14478210)  
-- **Authors:** Yu et al.  
+- **Authors:** Danilov, Viacheslav (Researcher)1, 2
+ORCID icon
+ 
+Laptev, Vladislav (Researcher)3, 4
+ORCID icon
+ 
+Klyshnikov, Kirill (Data manager)4
+ORCID icon
+ 
+Ovcharenko, Evgeny (Data manager)4
+ORCID icon
+ 
+Kochergin, Nikita (Data collector)4
+ORCID icon
 - **License:** CC BY 4.0 (Creative Commons Attribution 4.0 International)  
 
 **Our processing:**  
@@ -81,6 +94,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
