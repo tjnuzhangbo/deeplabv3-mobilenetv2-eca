@@ -19,11 +19,7 @@ MobileNetV2 Architecture
 
 ## 📘 Overview / 项目简介
 
-This project is implemented based on **PyTorch** and designed for **semantic segmentation of coronary artery plaques** in **Optical Coherence Tomography (OCT)** images.  
-该项目基于 **PyTorch** 框架实现，用于 **冠状动脉OCT图像中的斑块语义分割**。  
-
-The proposed model integrates **uncertainty-aware mechanisms** and **visual state-space modeling** to achieve high-precision and reliable segmentation.  
-本文模型结合了 **不确定性感知机制** 与 **视觉状态空间建模（Visual State Space Modeling）**，以实现高精度且稳定的分割性能。
+The model is built on an encoder-decoder structure and is improved in three key aspects: Firstly, MobileNetV2 is used as the backbone network in the encoder, optimizing feature extraction efficiency through its linear bottleneck structure and inverted residual units, significantly reducing the number of model parameters. Secondly, the multi-scale feature extraction capability of the Atrous Spatial Pyramid Pooling (ASPP) module is utilized to compensate for the feature loss caused by the lightweight design of MobileNetV2, enhancing the model's robustness to plaque morphology. Thirdly, an Efficient Channel Attention (ECA) module is embedded at the encoder-decoder skip connection, dynamically calibrating the weights of multi-scale feature channels to significantly improve the boundary recognition accuracy of plaques. 
 
 ---
 
@@ -35,6 +31,7 @@ Run the following command to start training:
 
 ```bash
 python train.py
+
 
 
 
