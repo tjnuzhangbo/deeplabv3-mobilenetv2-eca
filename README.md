@@ -52,11 +52,8 @@ python train.py
 
 ### 4️⃣ Evaluation / 模型评估
 
+python predict.py
 
-### 5️⃣ Visualization / 结果可视化
-
-
-### 6️⃣ Example Command Summary / 示例命令总结
 
 
 
