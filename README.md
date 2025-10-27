@@ -55,12 +55,6 @@ We used the publicly available dataset **“OCT Dataset for Segmentation of Athe
 > Note: This processed subset is a **derivative of the original dataset**.  
 > Please cite the original dataset (Yu et al., DOI: 10.5281/zenodo.14478210) when using this data.
 
-**Our processing:**  
-- We **re-annotated the dataset**, selecting **only one type of plaque** for our segmentation task;  
-- Images and corresponding masks were resized to 512×512 pixels;  
-- The dataset was split into training and validation sets as described in our experiments.  
-
-> Note: The processed subset is a **derivative of the original dataset**. Please cite the original dataset when using this portion of the data.
 
 #### 2. Private/Internal Dataset / 自有私有数据集
 We also conducted experiments using our own **in-house dataset** of coronary artery OCT images.  
@@ -87,6 +81,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
