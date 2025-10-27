@@ -55,15 +55,17 @@ Due to patient privacy and institutional restrictions, this dataset **cannot be 
 Experiments with this dataset were performed **independently of the public dataset**.
 
 #### 3. Dataset Splits / 数据集划分
-Both datasets (the public derivative and the internal dataset) were combined and then split into training/validation sets as follows:  
-Experiments were conducted **separately** for the two datasets:
+Experiments were conducted **separately** for the two datasets, each split into training and validation sets as follows:
 
-- **Public dataset (processed derivative)**: split into  
+- **Public dataset (processed derivative)**:  
   - Training: 80%  
   - Validation: 20%  
   Users can reproduce the exact splits by running `scripts/split_public_dataset.py` with `seed=42`.
 
-- **Private/internal dataset**: used independently; exact split details are not publicly available due to privacy restrictions.
+- **Private/internal dataset**:  
+  - Training: 80%  
+  - Validation: 20%  
+  Used independently; exact split details are not publicly available due to privacy restrictions.
 
 ### 3️⃣ Training / 模型训练
 
@@ -74,6 +76,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
