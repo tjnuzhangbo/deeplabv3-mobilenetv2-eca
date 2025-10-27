@@ -29,17 +29,13 @@ The proposed model integrates **uncertainty-aware mechanisms** and **visual stat
 
 ## 🚀 Quick Start / 快速开始
 
-### 1️⃣ Clone the repository / 克隆仓库
-```bash
-git clone https://github.com/【替换】/【替换】.git
-cd 【替换】
-
 ## Quick Start
 
 Run the following command to start training:
 
 ```bash
 python train.py
+
 
 
 
