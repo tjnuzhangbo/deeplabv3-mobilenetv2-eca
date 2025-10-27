@@ -27,12 +27,25 @@ The model is built on an encoder-decoder structure and is improved in three key 
 
 ## Quick Start
 
+### 1️⃣ Environment Setup / 环境配置
+
+
+Make sure you have Python 3.8+ and PyTorch installed. You can create a virtual environment and install dependencies as follows:
+
+```bash
+# Create a virtual environment
+conda create -n plaque-seg python=3.8
+conda activate plaque-seg
+
+# Install dependencies
+pip install -r requirements.txt
+
+
+
 Run the following command to start training:
 
 ```bash
 python train.py
-
-
 
 
 
