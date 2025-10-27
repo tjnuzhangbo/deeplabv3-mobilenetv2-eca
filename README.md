@@ -2,13 +2,6 @@
 
 This project is implemented based on PyTorch and is designed for semantic segmentation of plaques in coronary artery Optical Coherence Tomography (OCT) images.
 
-## Quick Start
-
-Run the following command to start training:
-
-```bash
-python train.py
-
 # 🧠 Medical Image Segmentation Model / 医学图像分割模型
 
 This repository contains the implementation of the paper:  
@@ -42,6 +35,14 @@ The proposed model integrates **uncertainty-aware mechanisms** and **visual stat
 ```bash
 git clone https://github.com/【替换】/【替换】.git
 cd 【替换】
+
+## Quick Start
+
+Run the following command to start training:
+
+```bash
+python train.py
+
 
 
 
