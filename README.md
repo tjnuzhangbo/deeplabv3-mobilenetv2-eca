@@ -13,8 +13,6 @@ ECA Attention Mechanism
 MobileNetV2 Architecture
 <img width="681" height="485" alt="image" src="https://github.com/user-attachments/assets/5ecaa157-2939-44b7-9c6e-cea34ae8cedf" />
 
-
-
 ---
 
 ## 📘 Overview / 项目简介
@@ -53,6 +51,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
