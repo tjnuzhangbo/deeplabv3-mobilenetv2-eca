@@ -10,6 +10,10 @@ Overall structure of the improved Deeplab V3+
 ECA Attention Mechanism
 <img width="859" height="315" alt="image" src="https://github.com/user-attachments/assets/e84b27bf-21ae-4895-9ac3-fb4ad0489e09" />
 
+MobileNetV2 Architecture
+<img width="681" height="485" alt="image" src="https://github.com/user-attachments/assets/5ecaa157-2939-44b7-9c6e-cea34ae8cedf" />
+
+
 
 ---
 
@@ -36,6 +40,7 @@ Run the following command to start training:
 
 ```bash
 python train.py
+
 
 
 
