@@ -47,6 +47,9 @@ We used the publicly available dataset **“OCT Dataset for Segmentation of Athe
 - **Authors:** Yu et al.  
 - **License:** CC BY 4.0 (Creative Commons Attribution 4.0 International)  
 
+We used the publicly available dataset **“OCT Dataset for Segmentation of Atherosclerotic Plaque Morphological Features”** (DOI: 10.5281/zenodo.14478210, Authors: Yu et al., License: CC BY 4.0) for part of our experiments.  
+Original dataset link: https://zenodo.org/records/14478210  
+
 **Our processing:**  
 - We **re-annotated the dataset**, selecting **only one type of plaque** for our segmentation task.  
 - Images and corresponding masks were resized to 512×512 pixels.  
@@ -81,6 +84,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
