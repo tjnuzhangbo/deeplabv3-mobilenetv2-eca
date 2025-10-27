@@ -50,18 +50,20 @@ Original dataset link: https://zenodo.org/records/14478210
 > Note: The processed subset is a **derivative of the original dataset**. Please cite the original dataset when using this portion of the data.
 
 #### 2. Private/Internal Dataset / 自有私有数据集
-In addition, we used our own **in‑house dataset** of coronary artery OCT images, collected under local institutional ethics approval.  
+We also conducted experiments using our own **in-house dataset** of coronary artery OCT images.  
 Due to patient privacy and institutional restrictions, this dataset **cannot be publicly shared**.  
-However, we provide:
-- **Preprocessing scripts** (`data_preprocess.py`) for transforming raw OCT images into the format compatible with our model;  
-- A **small sample** of anonymized images and masks for demonstration (`examples/` folder);  
-- Instructions to apply the same preprocessing steps to similar OCT datasets.  
+Experiments with this dataset were performed **independently of the public dataset**.
 
 #### 3. Dataset Splits / 数据集划分
 Both datasets (the public derivative and the internal dataset) were combined and then split into training/validation sets as follows:  
-- Training: 80%  
-- Validation: 20%  
-Users can reproduce the exact splits by running `scripts/split_dataset.py` with `seed=42`.
+Experiments were conducted **separately** for the two datasets:
+
+- **Public dataset (processed derivative)**: split into  
+  - Training: 80%  
+  - Validation: 20%  
+  Users can reproduce the exact splits by running `scripts/split_public_dataset.py` with `seed=42`.
+
+- **Private/internal dataset**: used independently; exact split details are not publicly available due to privacy restrictions.
 
 ### 3️⃣ Training / 模型训练
 
@@ -72,6 +74,7 @@ python train.py
 ### 4️⃣ Evaluation / 模型评估
 
 python predict.py
+
 
 
 
